@@ -21,7 +21,7 @@ public class EntityGraphTest {
     }
 
     @Test
-    public void findGroupByPerson() throws Exception {
+    public void findGroupByPersonNameTessa_ExpectTessaAndSandraInGroup() throws Exception {
         final Session session = HibernateUtil.getSessionFactory().openSession();
         EntityManager entityManager = session.getEntityManagerFactory().createEntityManager();
 

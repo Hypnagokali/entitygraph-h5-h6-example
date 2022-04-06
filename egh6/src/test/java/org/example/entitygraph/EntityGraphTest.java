@@ -1,9 +1,9 @@
 package org.example.entitygraph;
 
-import org.example.entitygraph.model.PersonGroup;
 import jakarta.persistence.EntityGraph;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
+import org.example.entitygraph.model.PersonGroup;
 import org.hibernate.Session;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -21,7 +21,7 @@ public class EntityGraphTest {
     }
 
     @Test
-    public void findGroupByPerson() throws Exception {
+    public void findGroupByPersonNameTessa_ExpectTessaAndSandraInGroup() throws Exception {
         final Session session = HibernateUtil.getSessionFactory().openSession();
         EntityManager entityManager = session.getEntityManagerFactory().createEntityManager();
 

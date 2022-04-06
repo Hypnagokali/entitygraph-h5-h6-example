@@ -1,0 +1,5 @@
+rootProject.name = 'entitygraph'
+include 'egh5'
+include 'egh6'
+
+
